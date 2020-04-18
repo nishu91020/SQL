@@ -1,9 +1,9 @@
 import os
 
 from sqlalchemy import create_engine
-from sqlalchemy.orm import scoped_session,sessionmaker
+from sqlalchemy.orm import scoped_session, sessionmaker
 
-engine=create_engine("C:\Windows\System32\cmd.exe\mydb.db")
+engine=create_engine("sqlite:///C:\\Users\\sysadmin\\Desktop\\Nishu\\sqlite3\\SQL\\mydb.db")
 mydb=scoped_session(sessionmaker(bind=engine))
 
 def main():
