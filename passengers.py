@@ -15,10 +15,13 @@ def main():
     if flight is None:
         print("error:no such flight")
         return
-    passengers=mydb.execute("select name from passangers where flight_id=:flight_id",
+    passangers=mydb.execute("select name from passangers where flight_id=:flight_id",
                             {"flight_id":flight_id}).fetchall()
     print("\n passangers:")
     for passanger in passangers:
         print(passanger.name)
     if len(passangers)==0:
         print("no passangers")
+if __name__=="__main__":
+    main()
+
