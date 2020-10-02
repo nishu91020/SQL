@@ -1,2 +1,2 @@
 # SQL
-perform basic function like fetching data from database accordeing to the query given.
+perform basic function like fetching data from database according to the query given.
